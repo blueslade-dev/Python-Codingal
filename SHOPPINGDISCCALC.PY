@@ -34,8 +34,8 @@ while checking:
       elif 100 < dpercent:
          print(f"D{"%"} can't be greater than 100 ")
          continue
-   except ValueError:
-      print("Exception: ", ex) # ex = ValueError as assigned earlier in the code 
+   except ValueError as ex:
+      print("Exception: ", ex)  
       continue   
    else:
       break 
